@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+    body {
+      margin: 0;
+      text-align: center;
+    }
+
+    header {
+      margin: 0 auto;
+      width: 431px;
+    }
+
+    canvas {
+      border: 1px solid #000;
+      background-color: #70c5ce;
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    @media screen and (max-width: 900px) {
+      header {
+        width: 100%;
+      }
+
+      canvas {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      canvas {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="game"></canvas>
+  <script src="./src/config.js"></script>
+  <script src="./src/base.js"></script>
+  <script src="./src/drawEngine.js"></script>
+  <script src="./src/background.js"></script>
+  <script src="./src/bird.js"></script>
+  <script src="./src/physicsEngines.js"></script>
+  <script src="./src/InputHandlers.js"></script>
+  <script src="./src/resources.js"></script>
+  <script src="./src/game.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
